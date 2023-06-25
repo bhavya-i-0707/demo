@@ -25,13 +25,13 @@ public class Addition {
     }
 
     public int getResult() {
-        return Result;
+        return result;
     }
 
     public void setResult(int result) {
-        Result = result;
+        this.result = result;
     }
 
     int oper2;
-    int Result;
+    int result;
 }

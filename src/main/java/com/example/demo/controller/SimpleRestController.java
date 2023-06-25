@@ -1,9 +1,7 @@
-package com.example.demo.controllers;
+package com.example.demo.controller;
 
 import com.example.demo.model.Addition;
-import com.example.demo.service.ServiceInterface;
 import com.example.demo.service.impl.ServiceImpl;
-import com.example.demo.utility.HelperClass;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.*;

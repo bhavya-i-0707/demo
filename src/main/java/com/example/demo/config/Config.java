@@ -1,15 +1,13 @@
-package com.example.demo;
+package com.example.demo.config;
 
 import com.example.demo.model.Addition;
-import com.example.demo.service.ServiceInterface;
 import com.example.demo.service.impl.ServiceImpl;
 import com.example.demo.utility.HelperClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.ResponseEntity;
 
 @Configuration
-public class config {
+public class Config {
 
         @Bean
         public Addition getAddition() {

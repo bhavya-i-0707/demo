@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT3</version>
+	<version>0.0.1-SNAPSHOT7</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -20,11 +20,9 @@
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 		<sonar.language>java</sonar.language>
-		<sonar.exclusions>src/main/java/com/example/demo/config/*.java</sonar.exclusions>
-		<sonar.exclusions>com/example/demo/model/*.java</sonar.exclusions>
-        <sonar.exclusions>com/example/demo/controller/*.java</sonar.exclusions>
-		<sonar.exclusions>com/example/demo/DemoApplication.java</sonar.exclusions>
-		<sonar.exclusions>com/example/demo/service/impl/*.java</sonar.exclusions>
+		<sonar.exclusions>**/Config.java,**/SimpleRestController.java,**/Addition.java,**/ServiceImpl.java,**/DemoApplication.java,**/ServiceInterface.java</sonar.exclusions>
+
+
 	</properties>
 	<dependencies>
 		<dependency>
@@ -67,13 +65,7 @@
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>${jacoco.version}</version>
 				<configuration>
-					<excludes>
-						<exclude>src/main/java/com/example/demo/config/*.java</exclude>
-						<exclude>com/example/demo/model/*.java</exclude>
-						<exclude>com/example/demo/controller/*.java</exclude>
-						<exclude>com/example/demo/DemoApplication.java</exclude>
-						<exclude>com/example/demo/service/impl/*.java</exclude>
-					</excludes>
+
 				</configuration>
 				<executions>
 					<execution>

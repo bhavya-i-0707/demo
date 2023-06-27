@@ -1,0 +1,9 @@
+version: 0.0
+os: windows
+files:
+  - source: https://github.com/bhavya-i-0707/demo
+    destination: C:\inetpub\wwwroot
+hooks:
+  BeforeInstall:
+    - location: \before-install.bat
+      timeout: 900
